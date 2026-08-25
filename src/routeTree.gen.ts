@@ -10,33 +10,131 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AlongamentoDeUnhasAlvoradaRouteImport } from './routes/alongamento-de-unhas-alvorada'
+import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as CortesDeCabeloAlvoradaRouteImport } from './routes/cortes-de-cabelo-alvorada'
+import { Route as ManicureUnhaTradicionalAlvoradaRouteImport } from './routes/manicure-unha-tradicional-alvorada'
+import { Route as ProgressivaDefAlvoradaRouteImport } from './routes/progressiva-def-alvorada'
+import { Route as ProgressivaSemidefAlvoradaRouteImport } from './routes/progressiva-semidef-alvorada'
+import { Route as SolturaDeCachosAlvoradaRouteImport } from './routes/soltura-de-cachos-alvorada'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AlongamentoDeUnhasAlvoradaRoute =
+  AlongamentoDeUnhasAlvoradaRouteImport.update({
+    id: '/alongamento-de-unhas-alvorada',
+    path: '/alongamento-de-unhas-alvorada',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/contato',
+  path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CortesDeCabeloAlvoradaRoute = CortesDeCabeloAlvoradaRouteImport.update({
+  id: '/cortes-de-cabelo-alvorada',
+  path: '/cortes-de-cabelo-alvorada',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ManicureUnhaTradicionalAlvoradaRoute =
+  ManicureUnhaTradicionalAlvoradaRouteImport.update({
+    id: '/manicure-unha-tradicional-alvorada',
+    path: '/manicure-unha-tradicional-alvorada',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProgressivaDefAlvoradaRoute = ProgressivaDefAlvoradaRouteImport.update({
+  id: '/progressiva-def-alvorada',
+  path: '/progressiva-def-alvorada',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgressivaSemidefAlvoradaRoute =
+  ProgressivaSemidefAlvoradaRouteImport.update({
+    id: '/progressiva-semidef-alvorada',
+    path: '/progressiva-semidef-alvorada',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SolturaDeCachosAlvoradaRoute = SolturaDeCachosAlvoradaRouteImport.update({
+  id: '/soltura-de-cachos-alvorada',
+  path: '/soltura-de-cachos-alvorada',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/alongamento-de-unhas-alvorada': typeof AlongamentoDeUnhasAlvoradaRoute
+  '/contato': typeof ContatoRoute
+  '/cortes-de-cabelo-alvorada': typeof CortesDeCabeloAlvoradaRoute
+  '/manicure-unha-tradicional-alvorada': typeof ManicureUnhaTradicionalAlvoradaRoute
+  '/progressiva-def-alvorada': typeof ProgressivaDefAlvoradaRoute
+  '/progressiva-semidef-alvorada': typeof ProgressivaSemidefAlvoradaRoute
+  '/soltura-de-cachos-alvorada': typeof SolturaDeCachosAlvoradaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/alongamento-de-unhas-alvorada': typeof AlongamentoDeUnhasAlvoradaRoute
+  '/contato': typeof ContatoRoute
+  '/cortes-de-cabelo-alvorada': typeof CortesDeCabeloAlvoradaRoute
+  '/manicure-unha-tradicional-alvorada': typeof ManicureUnhaTradicionalAlvoradaRoute
+  '/progressiva-def-alvorada': typeof ProgressivaDefAlvoradaRoute
+  '/progressiva-semidef-alvorada': typeof ProgressivaSemidefAlvoradaRoute
+  '/soltura-de-cachos-alvorada': typeof SolturaDeCachosAlvoradaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/alongamento-de-unhas-alvorada': typeof AlongamentoDeUnhasAlvoradaRoute
+  '/contato': typeof ContatoRoute
+  '/cortes-de-cabelo-alvorada': typeof CortesDeCabeloAlvoradaRoute
+  '/manicure-unha-tradicional-alvorada': typeof ManicureUnhaTradicionalAlvoradaRoute
+  '/progressiva-def-alvorada': typeof ProgressivaDefAlvoradaRoute
+  '/progressiva-semidef-alvorada': typeof ProgressivaSemidefAlvoradaRoute
+  '/soltura-de-cachos-alvorada': typeof SolturaDeCachosAlvoradaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/alongamento-de-unhas-alvorada'
+    | '/contato'
+    | '/cortes-de-cabelo-alvorada'
+    | '/manicure-unha-tradicional-alvorada'
+    | '/progressiva-def-alvorada'
+    | '/progressiva-semidef-alvorada'
+    | '/soltura-de-cachos-alvorada'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/alongamento-de-unhas-alvorada'
+    | '/contato'
+    | '/cortes-de-cabelo-alvorada'
+    | '/manicure-unha-tradicional-alvorada'
+    | '/progressiva-def-alvorada'
+    | '/progressiva-semidef-alvorada'
+    | '/soltura-de-cachos-alvorada'
+  id:
+    | '__root__'
+    | '/'
+    | '/alongamento-de-unhas-alvorada'
+    | '/contato'
+    | '/cortes-de-cabelo-alvorada'
+    | '/manicure-unha-tradicional-alvorada'
+    | '/progressiva-def-alvorada'
+    | '/progressiva-semidef-alvorada'
+    | '/soltura-de-cachos-alvorada'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AlongamentoDeUnhasAlvoradaRoute: typeof AlongamentoDeUnhasAlvoradaRoute
+  ContatoRoute: typeof ContatoRoute
+  CortesDeCabeloAlvoradaRoute: typeof CortesDeCabeloAlvoradaRoute
+  ManicureUnhaTradicionalAlvoradaRoute: typeof ManicureUnhaTradicionalAlvoradaRoute
+  ProgressivaDefAlvoradaRoute: typeof ProgressivaDefAlvoradaRoute
+  ProgressivaSemidefAlvoradaRoute: typeof ProgressivaSemidefAlvoradaRoute
+  SolturaDeCachosAlvoradaRoute: typeof SolturaDeCachosAlvoradaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +146,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/alongamento-de-unhas-alvorada': {
+      id: '/alongamento-de-unhas-alvorada'
+      path: '/alongamento-de-unhas-alvorada'
+      fullPath: '/alongamento-de-unhas-alvorada'
+      preLoaderRoute: typeof AlongamentoDeUnhasAlvoradaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contato': {
+      id: '/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cortes-de-cabelo-alvorada': {
+      id: '/cortes-de-cabelo-alvorada'
+      path: '/cortes-de-cabelo-alvorada'
+      fullPath: '/cortes-de-cabelo-alvorada'
+      preLoaderRoute: typeof CortesDeCabeloAlvoradaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/manicure-unha-tradicional-alvorada': {
+      id: '/manicure-unha-tradicional-alvorada'
+      path: '/manicure-unha-tradicional-alvorada'
+      fullPath: '/manicure-unha-tradicional-alvorada'
+      preLoaderRoute: typeof ManicureUnhaTradicionalAlvoradaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progressiva-def-alvorada': {
+      id: '/progressiva-def-alvorada'
+      path: '/progressiva-def-alvorada'
+      fullPath: '/progressiva-def-alvorada'
+      preLoaderRoute: typeof ProgressivaDefAlvoradaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progressiva-semidef-alvorada': {
+      id: '/progressiva-semidef-alvorada'
+      path: '/progressiva-semidef-alvorada'
+      fullPath: '/progressiva-semidef-alvorada'
+      preLoaderRoute: typeof ProgressivaSemidefAlvoradaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/soltura-de-cachos-alvorada': {
+      id: '/soltura-de-cachos-alvorada'
+      path: '/soltura-de-cachos-alvorada'
+      fullPath: '/soltura-de-cachos-alvorada'
+      preLoaderRoute: typeof SolturaDeCachosAlvoradaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AlongamentoDeUnhasAlvoradaRoute: AlongamentoDeUnhasAlvoradaRoute,
+  ContatoRoute: ContatoRoute,
+  CortesDeCabeloAlvoradaRoute: CortesDeCabeloAlvoradaRoute,
+  ManicureUnhaTradicionalAlvoradaRoute: ManicureUnhaTradicionalAlvoradaRoute,
+  ProgressivaDefAlvoradaRoute: ProgressivaDefAlvoradaRoute,
+  ProgressivaSemidefAlvoradaRoute: ProgressivaSemidefAlvoradaRoute,
+  SolturaDeCachosAlvoradaRoute: SolturaDeCachosAlvoradaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
