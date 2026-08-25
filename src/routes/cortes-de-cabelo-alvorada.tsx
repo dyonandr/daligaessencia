@@ -75,7 +75,7 @@ function Page() {
         subtitle="Cortes personalizados que valorizam o seu rosto e acompanham a sua rotina — com acabamento cuidadoso e resultado elegante."
         ctaHref={WA.cortes}
         ctaLabel="Quero agendar"
-        image={CORTES[3]}
+        image={CORTES[3]!}
       />
 
       <Section eyebrow="Nosso jeito de cortar" title="Cortes personalizados, do início ao acabamento">

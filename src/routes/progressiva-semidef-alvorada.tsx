@@ -75,7 +75,7 @@ function Page() {
         subtitle="Alinhamento leve, natural e elegante: menos volume e frizz, com o movimento do seu cabelo preservado."
         ctaHref={WA.semidef}
         ctaLabel="Quero saber mais"
-        image={PROGRESSIVA_SEMIDEF[1]}
+        image={PROGRESSIVA_SEMIDEF[1]!}
       />
 
       <Section eyebrow="Entenda o procedimento" title="O que é a Progressiva Semidef">

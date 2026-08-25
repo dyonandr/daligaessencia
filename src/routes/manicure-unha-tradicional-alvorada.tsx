@@ -75,7 +75,7 @@ function Page() {
         subtitle="Mãos bem cuidadas, acabamento impecável e esmaltação feita com calma e atenção aos detalhes."
         ctaHref={WA.unhaTradicional}
         ctaLabel="Quero agendar"
-        image={UNHA_TRADICIONAL[0]}
+        image={UNHA_TRADICIONAL[0]!}
       />
 
       <Section eyebrow="O serviço" title="Manicure e unha tradicional">

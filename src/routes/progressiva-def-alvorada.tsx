@@ -75,7 +75,7 @@ function Page() {
         subtitle="Fios lisos, alinhados e com brilho: o alinhamento definitivo feito com avaliação prévia e acabamento cuidadoso."
         ctaHref={WA.def}
         ctaLabel="Quero saber mais"
-        image={PROGRESSIVA_DEF[1]}
+        image={PROGRESSIVA_DEF[1]!}
       />
 
       <Section eyebrow="Entenda o procedimento" title="O que é a Progressiva DEF">

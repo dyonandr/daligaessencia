@@ -75,7 +75,7 @@ function Page() {
         subtitle="Menos volume, mais movimento: um resultado leve e natural, com fios definidos e finalização simples no dia a dia."
         ctaHref={WA.cachos}
         ctaLabel="Quero saber mais"
-        image={CACHOS[0]}
+        image={CACHOS[0]!}
       />
 
       <Section eyebrow="Entenda o procedimento" title="O que é a soltura de cachos">

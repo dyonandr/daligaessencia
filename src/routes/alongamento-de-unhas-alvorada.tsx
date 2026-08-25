@@ -75,7 +75,7 @@ function Page() {
         subtitle="Formato definido, resistência e acabamento sofisticado para mãos elegantes em qualquer ocasião."
         ctaHref={WA.alongamento}
         ctaLabel="Quero saber mais"
-        image={ALONGAMENTO[0]}
+        image={ALONGAMENTO[0]!}
       />
 
       <Section eyebrow="Entenda a técnica" title="O que é o alongamento de unhas">
