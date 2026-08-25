@@ -10,33 +10,77 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProgressivaDefAlvoradaRouteImport } from './routes/progressiva-def-alvorada'
+import { Route as ProgressivaSemidefAlvoradaRouteImport } from './routes/progressiva-semidef-alvorada'
+import { Route as SolturaDeCachosAlvoradaRouteImport } from './routes/soltura-de-cachos-alvorada'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProgressivaDefAlvoradaRoute = ProgressivaDefAlvoradaRouteImport.update({
+  id: '/progressiva-def-alvorada',
+  path: '/progressiva-def-alvorada',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgressivaSemidefAlvoradaRoute =
+  ProgressivaSemidefAlvoradaRouteImport.update({
+    id: '/progressiva-semidef-alvorada',
+    path: '/progressiva-semidef-alvorada',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SolturaDeCachosAlvoradaRoute = SolturaDeCachosAlvoradaRouteImport.update({
+  id: '/soltura-de-cachos-alvorada',
+  path: '/soltura-de-cachos-alvorada',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/progressiva-def-alvorada': typeof ProgressivaDefAlvoradaRoute
+  '/progressiva-semidef-alvorada': typeof ProgressivaSemidefAlvoradaRoute
+  '/soltura-de-cachos-alvorada': typeof SolturaDeCachosAlvoradaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/progressiva-def-alvorada': typeof ProgressivaDefAlvoradaRoute
+  '/progressiva-semidef-alvorada': typeof ProgressivaSemidefAlvoradaRoute
+  '/soltura-de-cachos-alvorada': typeof SolturaDeCachosAlvoradaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/progressiva-def-alvorada': typeof ProgressivaDefAlvoradaRoute
+  '/progressiva-semidef-alvorada': typeof ProgressivaSemidefAlvoradaRoute
+  '/soltura-de-cachos-alvorada': typeof SolturaDeCachosAlvoradaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/progressiva-def-alvorada'
+    | '/progressiva-semidef-alvorada'
+    | '/soltura-de-cachos-alvorada'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/progressiva-def-alvorada'
+    | '/progressiva-semidef-alvorada'
+    | '/soltura-de-cachos-alvorada'
+  id:
+    | '__root__'
+    | '/'
+    | '/progressiva-def-alvorada'
+    | '/progressiva-semidef-alvorada'
+    | '/soltura-de-cachos-alvorada'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ProgressivaDefAlvoradaRoute: typeof ProgressivaDefAlvoradaRoute
+  ProgressivaSemidefAlvoradaRoute: typeof ProgressivaSemidefAlvoradaRoute
+  SolturaDeCachosAlvoradaRoute: typeof SolturaDeCachosAlvoradaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +92,35 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/progressiva-def-alvorada': {
+      id: '/progressiva-def-alvorada'
+      path: '/progressiva-def-alvorada'
+      fullPath: '/progressiva-def-alvorada'
+      preLoaderRoute: typeof ProgressivaDefAlvoradaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/progressiva-semidef-alvorada': {
+      id: '/progressiva-semidef-alvorada'
+      path: '/progressiva-semidef-alvorada'
+      fullPath: '/progressiva-semidef-alvorada'
+      preLoaderRoute: typeof ProgressivaSemidefAlvoradaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/soltura-de-cachos-alvorada': {
+      id: '/soltura-de-cachos-alvorada'
+      path: '/soltura-de-cachos-alvorada'
+      fullPath: '/soltura-de-cachos-alvorada'
+      preLoaderRoute: typeof SolturaDeCachosAlvoradaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ProgressivaDefAlvoradaRoute: ProgressivaDefAlvoradaRoute,
+  ProgressivaSemidefAlvoradaRoute: ProgressivaSemidefAlvoradaRoute,
+  SolturaDeCachosAlvoradaRoute: SolturaDeCachosAlvoradaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
