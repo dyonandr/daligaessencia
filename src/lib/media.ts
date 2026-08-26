@@ -108,7 +108,24 @@ export const CACHOS: Media[] = [
     src: cachos4.url,
     alt: "Fios com cachos soltos e definidos após atendimento no Espaço Essência",
   },
+  {
+    src: cachos1.url,
+    alt: "Cabelo cacheado volumoso antes da soltura de cachos no Espaço Essência em Alvorada RS",
+  },
+  {
+    src: cachos2.url,
+    alt: "Cachos definidos e soltos após atendimento de soltura de cachos em Alvorada RS",
+  },
+  {
+    src: cachos5.url,
+    alt: "Cabelo crespo longo com muito volume antes do procedimento de soltura de cachos",
+  },
+  {
+    src: cachos6.url,
+    alt: "Cachos longos definidos com mechas iluminadas após soltura de cachos em Alvorada RS",
+  },
 ];
+
 
 export const UNHA_TRADICIONAL: Media[] = [
   {
