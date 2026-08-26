@@ -24,10 +24,11 @@ import cachos5 from "@/assets/cachos5.jpg.asset.json";
 import cachos2 from "@/assets/cachos2.jpg.asset.json";
 
 
-import unhaTradicional1 from "@/assets/unha-tradicional-1.jpg";
-import unhaTradicional2 from "@/assets/unha-tradicional-2.jpg";
-import alongamento1 from "@/assets/alongamento-1.jpg";
-import alongamento2 from "@/assets/alongamento-2.jpg";
+import unhaReal1 from "@/assets/unha-real-1.jpg.asset.json";
+import unhaGel1 from "@/assets/unha-gel-1.jpg.asset.json";
+import unhaGel2 from "@/assets/unha-gel-2.jpg.asset.json";
+import alongamentoReal1 from "@/assets/alongamento-real-1.jpg.asset.json";
+import alongamentoReal2 from "@/assets/alongamento-real-2.jpg.asset.json";
 import heroSalao from "@/assets/hero-salao.jpg";
 
 export type Media = { src: string; alt: string };
@@ -150,22 +151,26 @@ export const CACHOS: Media[] = [
 
 export const UNHA_TRADICIONAL: Media[] = [
   {
-    src: unhaTradicional1,
-    alt: "Mãos bem cuidadas com esmaltação nude brilhante feita em manicure em Alvorada RS",
+    src: unhaReal1.url,
+    alt: "Unhas quadradas com esmaltação vinho brilhante feita em manicure tradicional em Alvorada RS",
   },
   {
-    src: unhaTradicional2,
-    alt: "Profissional aplicando esmalte vermelho em atendimento de unha tradicional",
+    src: unhaGel1.url,
+    alt: "Esmaltação em gel com francesinha branca e detalhe dourado feita no Espaço Essência em Alvorada RS",
+  },
+  {
+    src: unhaGel2.url,
+    alt: "Esmaltação em gel com brilho, glitter e pedrarias em unhas amendoadas em Alvorada RS",
   },
 ];
 
 export const ALONGAMENTO: Media[] = [
   {
-    src: alongamento1,
-    alt: "Alongamento de unhas em formato amêndoa com acabamento nude e detalhe dourado",
+    src: alongamentoReal1.url,
+    alt: "Alongamento de unhas com esmaltação azul e glitter, feito no Espaço Essência em Alvorada RS",
   },
   {
-    src: alongamento2,
-    alt: "Aplicação de alongamento de unhas em gel em atendimento profissional",
+    src: alongamentoReal2.url,
+    alt: "Alongamento de unhas em formato quadrado com esmalte verde e detalhes em glitter dourado",
   },
 ];
