@@ -101,7 +101,24 @@ export const PROGRESSIVA_SEMIDEF: Media[] = [
     src: semi5.url,
     alt: "Resultado de progressiva semidefinitiva: fios alinhados com movimento preservado",
   },
+  {
+    src: semi1.url,
+    alt: "Cabelo cacheado com volume antes da progressiva semidefinitiva em Alvorada RS",
+  },
+  {
+    src: semi2.url,
+    alt: "Cabelo castanho alinhado após progressiva semidefinitiva no Espaço Essência",
+  },
+  {
+    src: semi3.url,
+    alt: "Cabelo longo liso com mechas iluminadas após progressiva semidefinitiva em Alvorada RS",
+  },
+  {
+    src: semi6.url,
+    alt: "Cabelo escuro com corte reto e brilho após progressiva semidefinitiva no Espaço Essência",
+  },
 ];
+
 
 export const CACHOS: Media[] = [
   {
