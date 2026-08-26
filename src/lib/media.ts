@@ -2,12 +2,23 @@ import corte3 from "@/assets/corte3.jpg.asset.json";
 import corte4 from "@/assets/corte4.jpg.asset.json";
 import corte13 from "@/assets/corte13.jpg.asset.json";
 import corte14 from "@/assets/corte14.jpg.asset.json";
+import corte5 from "@/assets/corte5.jpg.asset.json";
+import corte16 from "@/assets/corte16.jpg.asset.json";
+import corte15 from "@/assets/corte15.jpg.asset.json";
+import corte12 from "@/assets/corte12.jpg.asset.json";
+import corte11 from "@/assets/corte11.jpg.asset.json";
+import corte9 from "@/assets/corte9.jpg.asset.json";
 import semi7 from "@/assets/Semi7.jpg.asset.json";
 import semi8 from "@/assets/Semi8.jpg.asset.json";
 import semi4 from "@/assets/Semi4.jpg.asset.json";
 import semi5 from "@/assets/Semi5.jpg.asset.json";
 import cachos3 from "@/assets/cachos3.jpg.asset.json";
 import cachos4 from "@/assets/cachos4.jpg.asset.json";
+import cachos1 from "@/assets/cachos1.jpg.asset.json";
+import cachos6 from "@/assets/cachos6.jpg.asset.json";
+import cachos5 from "@/assets/cachos5.jpg.asset.json";
+import cachos2 from "@/assets/cachos2.jpg.asset.json";
+
 
 import unhaTradicional1 from "@/assets/unha-tradicional-1.jpg";
 import unhaTradicional2 from "@/assets/unha-tradicional-2.jpg";
