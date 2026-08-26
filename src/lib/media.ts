@@ -50,7 +50,32 @@ export const CORTES: Media[] = [
     src: corte4.url,
     alt: "Corte de cabelo feminino na altura dos ombros com camadas e mechas iluminadas",
   },
+  {
+    src: corte9.url,
+    alt: "Corte longo em camadas com mechas iluminadas e pontas modeladas em Alvorada RS",
+  },
+  {
+    src: corte12.url,
+    alt: "Corte médio liso com acabamento reto e mecha frontal loira, feito no Espaço Essência",
+  },
+  {
+    src: corte16.url,
+    alt: "Corte curto tipo chanel com mechas loiras em salão de beleza em Alvorada RS",
+  },
+  {
+    src: corte15.url,
+    alt: "Corte curto masculinizado com textura e movimento no topo, feito em Alvorada RS",
+  },
+  {
+    src: corte5.url,
+    alt: "Corte curto moderno com máquina nas laterais e coloração vermelha vibrante",
+  },
+  {
+    src: corte11.url,
+    alt: "Cabelo loiro com raiz escura preso, mostrando resultado de corte e coloração em Alvorada RS",
+  },
 ];
+
 
 export const PROGRESSIVA_DEF: Media[] = [
   {
