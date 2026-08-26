@@ -12,6 +12,10 @@ import semi7 from "@/assets/Semi7.jpg.asset.json";
 import semi8 from "@/assets/Semi8.jpg.asset.json";
 import semi4 from "@/assets/Semi4.jpg.asset.json";
 import semi5 from "@/assets/Semi5.jpg.asset.json";
+import semi1 from "@/assets/Semi1.jpg.asset.json";
+import semi2 from "@/assets/Semi2.jpg.asset.json";
+import semi3 from "@/assets/Semi3.jpg.asset.json";
+import semi6 from "@/assets/Semi6.jpg.asset.json";
 import cachos3 from "@/assets/cachos3.jpg.asset.json";
 import cachos4 from "@/assets/cachos4.jpg.asset.json";
 import cachos1 from "@/assets/cachos1.jpg.asset.json";
@@ -97,7 +101,24 @@ export const PROGRESSIVA_SEMIDEF: Media[] = [
     src: semi5.url,
     alt: "Resultado de progressiva semidefinitiva: fios alinhados com movimento preservado",
   },
+  {
+    src: semi1.url,
+    alt: "Cabelo cacheado com volume antes da progressiva semidefinitiva em Alvorada RS",
+  },
+  {
+    src: semi2.url,
+    alt: "Cabelo castanho alinhado após progressiva semidefinitiva no Espaço Essência",
+  },
+  {
+    src: semi3.url,
+    alt: "Cabelo longo liso com mechas iluminadas após progressiva semidefinitiva em Alvorada RS",
+  },
+  {
+    src: semi6.url,
+    alt: "Cabelo escuro com corte reto e brilho após progressiva semidefinitiva no Espaço Essência",
+  },
 ];
+
 
 export const CACHOS: Media[] = [
   {
