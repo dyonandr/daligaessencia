@@ -88,7 +88,8 @@ function Page() {
           </p>
           <p>
             Do formato à cor do esmalte, tudo é escolhido junto com você — do
-            nude discreto ao vermelho clássico.
+            nude discreto ao vermelho clássico. Também fazemos esmaltação em
+            gel, com brilho intenso e durabilidade maior.
           </p>
         </Prose>
       </Section>
