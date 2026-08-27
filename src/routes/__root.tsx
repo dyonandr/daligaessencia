@@ -81,12 +81,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Espaço Essência | Salão de Beleza em Alvorada RS" },
-      {
-        name: "description",
-        content:
-          "Espaço Essência em Alvorada RS: serviços de cabelo e unhas com atendimento especializado, sofisticação e cuidado. Agende pelo WhatsApp.",
-      },
       { property: "og:site_name", content: "Espaço Essência" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
