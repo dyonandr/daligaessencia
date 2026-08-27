@@ -46,11 +46,31 @@ function Page() {
             </a>
           </p>
           <p>
-            <strong className="text-foreground">Cidade:</strong> Alvorada / RS
+            <strong className="text-foreground">Endereço:</strong>{" "}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Av.+Zero+Hora,+814+-+Jardim+Algarve,+Alvorada+-+RS,+94859-250"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold"
+            >
+              Av. Zero Hora, 814 — Jardim Algarve, Alvorada/RS, CEP 94859-250
+            </a>
           </p>
-          <p className="text-muted-foreground/70">
-            Endereço completo: em breve · Horário de atendimento: em breve ·
-            Instagram: em breve
+          <p>
+            <strong className="text-foreground">Horário de atendimento:</strong>{" "}
+            Segunda a sábado, das 9h às 18h. Às segundas-feiras, o atendimento é
+            somente com horário marcado.
+          </p>
+          <p>
+            <strong className="text-foreground">Instagram:</strong>{" "}
+            <a
+              href="https://www.instagram.com/espacoessencia_alvorada"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold"
+            >
+              @espacoessencia_alvorada
+            </a>
           </p>
           <p>
             O atendimento é com horário marcado, garantindo tranquilidade e

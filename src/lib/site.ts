@@ -85,10 +85,28 @@ export function localBusinessSchema() {
       "Salão de beleza em Alvorada/RS especializado em cabelos e unhas: soltura de cachos, progressiva DEF, progressiva semidef, cortes, manicure e alongamento de unhas.",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Av. Zero Hora, 814",
       addressLocality: "Alvorada",
       addressRegion: "RS",
+      postalCode: "94859-250",
       addressCountry: "BR",
     },
+    sameAs: ["https://www.instagram.com/espacoessencia_alvorada"],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        opens: "09:00",
+        closes: "18:00",
+      },
+    ],
     areaServed: [
       { "@type": "City", name: "Alvorada" },
       { "@type": "City", name: "Cachoeirinha" },
