@@ -50,9 +50,9 @@ export const Route = createFileRoute("/")({
         content:
           "Salão de beleza em Alvorada RS com serviços de cabelo e unhas. Atendimento personalizado e agendamento pelo WhatsApp.",
       },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://daligaessencia.lovable.app/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://daligaessencia.lovable.app/" }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(faqSchema(FAQ)) },
     ],

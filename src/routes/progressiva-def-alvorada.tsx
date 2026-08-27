@@ -50,9 +50,9 @@ export const Route = createFileRoute("/progressiva-def-alvorada")({
         content:
           "Progressiva definitiva em Alvorada RS com avaliação do fio e acabamento alinhado. Agende pelo WhatsApp.",
       },
-      { property: "og:url", content: "/progressiva-def-alvorada" },
+      { property: "og:url", content: "https://daligaessencia.lovable.app/progressiva-def-alvorada" },
     ],
-    links: [{ rel: "canonical", href: "/progressiva-def-alvorada" }],
+    links: [{ rel: "canonical", href: "https://daligaessencia.lovable.app/progressiva-def-alvorada" }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(faqSchema(FAQ)) },
       {

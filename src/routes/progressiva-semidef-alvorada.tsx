@@ -50,9 +50,9 @@ export const Route = createFileRoute("/progressiva-semidef-alvorada")({
         content:
           "Alinhamento semidefinitivo em Alvorada RS: menos volume com movimento preservado. Agende pelo WhatsApp.",
       },
-      { property: "og:url", content: "/progressiva-semidef-alvorada" },
+      { property: "og:url", content: "https://daligaessencia.lovable.app/progressiva-semidef-alvorada" },
     ],
-    links: [{ rel: "canonical", href: "/progressiva-semidef-alvorada" }],
+    links: [{ rel: "canonical", href: "https://daligaessencia.lovable.app/progressiva-semidef-alvorada" }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(faqSchema(FAQ)) },
       {

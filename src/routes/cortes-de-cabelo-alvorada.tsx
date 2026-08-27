@@ -50,9 +50,9 @@ export const Route = createFileRoute("/cortes-de-cabelo-alvorada")({
         content:
           "Cortes femininos personalizados em Alvorada RS, pensados para o seu rosto, seu estilo e sua rotina.",
       },
-      { property: "og:url", content: "/cortes-de-cabelo-alvorada" },
+      { property: "og:url", content: "https://daligaessencia.lovable.app/cortes-de-cabelo-alvorada" },
     ],
-    links: [{ rel: "canonical", href: "/cortes-de-cabelo-alvorada" }],
+    links: [{ rel: "canonical", href: "https://daligaessencia.lovable.app/cortes-de-cabelo-alvorada" }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(faqSchema(FAQ)) },
       {
