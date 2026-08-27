@@ -1,7 +1,12 @@
 export const WHATSAPP_NUMBER = "5551985623831";
+export const WHATSAPP_NAILS_NUMBER = "5551985552553";
 
 export function whatsappLink(message: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+
+export function whatsappLinkNails(message: string) {
+  return `https://wa.me/${WHATSAPP_NAILS_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
 export const WA = {
@@ -20,10 +25,10 @@ export const WA = {
   cortes: whatsappLink(
     "Olá! Vim pelo site do Espaço Essência e gostaria de agendar um corte.",
   ),
-  unhaTradicional: whatsappLink(
+  unhaTradicional: whatsappLinkNails(
     "Olá! Vim pelo site do Espaço Essência e gostaria de agendar minha unha tradicional.",
   ),
-  alongamento: whatsappLink(
+  alongamento: whatsappLinkNails(
     "Olá! Vim pelo site do Espaço Essência e gostaria de saber mais sobre o alongamento de unhas.",
   ),
 };
