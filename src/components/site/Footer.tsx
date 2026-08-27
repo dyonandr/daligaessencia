@@ -50,13 +50,27 @@ export function Footer() {
                 WhatsApp: (51) 98562-3831
               </a>
             </li>
-            <li className="text-muted-foreground/70">
-              Endereço completo: em breve
+            <li>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Av.+Zero+Hora,+814+-+Jardim+Algarve,+Alvorada+-+RS,+94859-250"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-gold"
+              >
+                Av. Zero Hora, 814 — Jardim Algarve, Alvorada/RS, 94859-250
+              </a>
             </li>
-            <li className="text-muted-foreground/70">
-              Horário de atendimento: em breve
+            <li>Segunda a sábado, das 9h às 18h (segunda somente com horário marcado)</li>
+            <li>
+              <a
+                href="https://www.instagram.com/espacoessencia_alvorada"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-gold"
+              >
+                Instagram: @espacoessencia_alvorada
+              </a>
             </li>
-            <li className="text-muted-foreground/70">Instagram: em breve</li>
             <li>
               <Link to="/contato" className="transition-colors hover:text-gold">
                 Página de contato
