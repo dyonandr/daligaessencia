@@ -50,9 +50,9 @@ export const Route = createFileRoute("/alongamento-de-unhas-alvorada")({
         content:
           "Alongamento de unhas em Alvorada RS com formato definido, resistência e acabamento premium.",
       },
-      { property: "og:url", content: "/alongamento-de-unhas-alvorada" },
+      { property: "og:url", content: "https://daligaessencia.lovable.app/alongamento-de-unhas-alvorada" },
     ],
-    links: [{ rel: "canonical", href: "/alongamento-de-unhas-alvorada" }],
+    links: [{ rel: "canonical", href: "https://daligaessencia.lovable.app/alongamento-de-unhas-alvorada" }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(faqSchema(FAQ)) },
       {

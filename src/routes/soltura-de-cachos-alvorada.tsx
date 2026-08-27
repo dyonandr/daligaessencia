@@ -50,9 +50,9 @@ export const Route = createFileRoute("/soltura-de-cachos-alvorada")({
         content:
           "Soltura de cachos em Alvorada RS: menos volume, mais movimento e definição. Agende pelo WhatsApp.",
       },
-      { property: "og:url", content: "/soltura-de-cachos-alvorada" },
+      { property: "og:url", content: "https://daligaessencia.lovable.app/soltura-de-cachos-alvorada" },
     ],
-    links: [{ rel: "canonical", href: "/soltura-de-cachos-alvorada" }],
+    links: [{ rel: "canonical", href: "https://daligaessencia.lovable.app/soltura-de-cachos-alvorada" }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(faqSchema(FAQ)) },
       {

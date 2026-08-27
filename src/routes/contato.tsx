@@ -18,9 +18,9 @@ export const Route = createFileRoute("/contato")({
         content:
           "Agende seu horário no Espaço Essência em Alvorada RS pelo WhatsApp.",
       },
-      { property: "og:url", content: "/contato" },
+      { property: "og:url", content: "https://daligaessencia.lovable.app/contato" },
     ],
-    links: [{ rel: "canonical", href: "/contato" }],
+    links: [{ rel: "canonical", href: "https://daligaessencia.lovable.app/contato" }],
   }),
   component: Page,
 });

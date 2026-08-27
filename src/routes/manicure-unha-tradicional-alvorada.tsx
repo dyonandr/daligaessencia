@@ -50,9 +50,9 @@ export const Route = createFileRoute("/manicure-unha-tradicional-alvorada")({
         content:
           "Unha tradicional em Alvorada RS: cuidado com cutículas, formato e esmaltação impecável. Agende pelo WhatsApp.",
       },
-      { property: "og:url", content: "/manicure-unha-tradicional-alvorada" },
+      { property: "og:url", content: "https://daligaessencia.lovable.app/manicure-unha-tradicional-alvorada" },
     ],
-    links: [{ rel: "canonical", href: "/manicure-unha-tradicional-alvorada" }],
+    links: [{ rel: "canonical", href: "https://daligaessencia.lovable.app/manicure-unha-tradicional-alvorada" }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(faqSchema(FAQ)) },
       {

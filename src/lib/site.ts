@@ -73,10 +73,13 @@ export const SERVICES = [
   },
 ] as const;
 
+export const SITE_URL = "https://daligaessencia.lovable.app";
+
 export function localBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "BeautySalon",
+    "@id": `${SITE_URL}/#salao`,
     name: "Espaço Essência",
     description:
       "Salão de beleza em Alvorada/RS especializado em cabelos e unhas: soltura de cachos, progressiva DEF, progressiva semidef, cortes, manicure e alongamento de unhas.",
@@ -86,10 +89,28 @@ export function localBusinessSchema() {
       addressRegion: "RS",
       addressCountry: "BR",
     },
-    areaServed: "Alvorada, RS",
+    areaServed: [
+      { "@type": "City", name: "Alvorada" },
+      { "@type": "City", name: "Cachoeirinha" },
+      { "@type": "City", name: "Viamão" },
+      { "@type": "City", name: "Porto Alegre" },
+    ],
     telephone: "+5551985623831",
     priceRange: "$$",
-    url: "/",
+    currenciesAccepted: "BRL",
+    url: `${SITE_URL}/`,
+    hasMap: "https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o+Ess%C3%AAncia+Alvorada+RS",
+    makesOffer: [
+      "Soltura de cachos",
+      "Progressiva DEF",
+      "Progressiva Semidef",
+      "Corte de cabelo",
+      "Manicure e unha tradicional",
+      "Alongamento de unhas",
+    ].map((name) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Service", name, areaServed: "Alvorada, RS" },
+    })),
   };
 }
 
@@ -110,8 +131,8 @@ export function breadcrumbSchema(name: string, path: string) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Início", item: "/" },
-      { "@type": "ListItem", position: 2, name, item: path },
+      { "@type": "ListItem", position: 1, name: "Início", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name, item: `${SITE_URL}${path}` },
     ],
   };
 }
