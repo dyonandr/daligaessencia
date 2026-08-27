@@ -16,6 +16,7 @@ import { Route as CortesDeCabeloAlvoradaRouteImport } from './routes/cortes-de-c
 import { Route as ManicureUnhaTradicionalAlvoradaRouteImport } from './routes/manicure-unha-tradicional-alvorada'
 import { Route as ProgressivaDefAlvoradaRouteImport } from './routes/progressiva-def-alvorada'
 import { Route as ProgressivaSemidefAlvoradaRouteImport } from './routes/progressiva-semidef-alvorada'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SolturaDeCachosAlvoradaRouteImport } from './routes/soltura-de-cachos-alvorada'
 
 const IndexRoute = IndexRouteImport.update({
@@ -56,6 +57,11 @@ const ProgressivaSemidefAlvoradaRoute =
     path: '/progressiva-semidef-alvorada',
     getParentRoute: () => rootRouteImport,
   } as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SolturaDeCachosAlvoradaRoute = SolturaDeCachosAlvoradaRouteImport.update({
   id: '/soltura-de-cachos-alvorada',
   path: '/soltura-de-cachos-alvorada',
@@ -70,6 +76,7 @@ export interface FileRoutesByFullPath {
   '/manicure-unha-tradicional-alvorada': typeof ManicureUnhaTradicionalAlvoradaRoute
   '/progressiva-def-alvorada': typeof ProgressivaDefAlvoradaRoute
   '/progressiva-semidef-alvorada': typeof ProgressivaSemidefAlvoradaRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/soltura-de-cachos-alvorada': typeof SolturaDeCachosAlvoradaRoute
 }
 export interface FileRoutesByTo {
@@ -80,6 +87,7 @@ export interface FileRoutesByTo {
   '/manicure-unha-tradicional-alvorada': typeof ManicureUnhaTradicionalAlvoradaRoute
   '/progressiva-def-alvorada': typeof ProgressivaDefAlvoradaRoute
   '/progressiva-semidef-alvorada': typeof ProgressivaSemidefAlvoradaRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/soltura-de-cachos-alvorada': typeof SolturaDeCachosAlvoradaRoute
 }
 export interface FileRoutesById {
@@ -91,6 +99,7 @@ export interface FileRoutesById {
   '/manicure-unha-tradicional-alvorada': typeof ManicureUnhaTradicionalAlvoradaRoute
   '/progressiva-def-alvorada': typeof ProgressivaDefAlvoradaRoute
   '/progressiva-semidef-alvorada': typeof ProgressivaSemidefAlvoradaRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/soltura-de-cachos-alvorada': typeof SolturaDeCachosAlvoradaRoute
 }
 export interface FileRouteTypes {
@@ -103,6 +112,7 @@ export interface FileRouteTypes {
     | '/manicure-unha-tradicional-alvorada'
     | '/progressiva-def-alvorada'
     | '/progressiva-semidef-alvorada'
+    | '/sitemap.xml'
     | '/soltura-de-cachos-alvorada'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -113,6 +123,7 @@ export interface FileRouteTypes {
     | '/manicure-unha-tradicional-alvorada'
     | '/progressiva-def-alvorada'
     | '/progressiva-semidef-alvorada'
+    | '/sitemap.xml'
     | '/soltura-de-cachos-alvorada'
   id:
     | '__root__'
@@ -123,6 +134,7 @@ export interface FileRouteTypes {
     | '/manicure-unha-tradicional-alvorada'
     | '/progressiva-def-alvorada'
     | '/progressiva-semidef-alvorada'
+    | '/sitemap.xml'
     | '/soltura-de-cachos-alvorada'
   fileRoutesById: FileRoutesById
 }
@@ -134,6 +146,7 @@ export interface RootRouteChildren {
   ManicureUnhaTradicionalAlvoradaRoute: typeof ManicureUnhaTradicionalAlvoradaRoute
   ProgressivaDefAlvoradaRoute: typeof ProgressivaDefAlvoradaRoute
   ProgressivaSemidefAlvoradaRoute: typeof ProgressivaSemidefAlvoradaRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SolturaDeCachosAlvoradaRoute: typeof SolturaDeCachosAlvoradaRoute
 }
 
@@ -188,6 +201,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProgressivaSemidefAlvoradaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/soltura-de-cachos-alvorada': {
       id: '/soltura-de-cachos-alvorada'
       path: '/soltura-de-cachos-alvorada'
@@ -206,6 +226,7 @@ const rootRouteChildren: RootRouteChildren = {
   ManicureUnhaTradicionalAlvoradaRoute: ManicureUnhaTradicionalAlvoradaRoute,
   ProgressivaDefAlvoradaRoute: ProgressivaDefAlvoradaRoute,
   ProgressivaSemidefAlvoradaRoute: ProgressivaSemidefAlvoradaRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SolturaDeCachosAlvoradaRoute: SolturaDeCachosAlvoradaRoute,
 }
 export const routeTree = rootRouteImport
