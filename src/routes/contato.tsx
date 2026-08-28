@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { MessageCircle } from "lucide-react";
 import { WA, SERVICES } from "@/lib/site";
 import { HERO_SALAO } from "@/lib/media";
 import { PageHero, Section, CtaBand, RelatedLinks } from "@/components/site/blocks";
@@ -151,12 +152,33 @@ function Page() {
         <RelatedLinks items={SERVICES.map((s) => ({ ...s }))} />
       </Section>
 
-      <CtaBand
+<CtaBand
         title="Estamos à sua espera"
         text="Envie uma mensagem agora e garanta o seu horário no Espaço Essência."
         href={WA.home}
         label="Agendar pelo WhatsApp"
       />
+
+      <ContactWhatsAppFloat />
     </>
+  );
+}
+
+function ContactWhatsAppFloat() {
+  return (
+    <a
+      href={WA.home}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Agendar pelo WhatsApp"
+      className="group fixed bottom-24 right-5 z-50 flex items-center gap-3 rounded-full border border-gold/50 bg-ink py-3 pl-4 pr-5 shadow-lg transition-transform hover:scale-105"
+    >
+      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-ink">
+        <MessageCircle size={20} />
+      </span>
+      <span className="text-sm font-medium tracking-wide text-gold">
+        Agendar pelo WhatsApp
+      </span>
+    </a>
   );
 }

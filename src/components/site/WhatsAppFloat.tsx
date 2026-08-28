@@ -1,7 +1,10 @@
 import { MessageCircle } from "lucide-react";
+import { useRouterState } from "@tanstack/react-router";
 import { WA } from "@/lib/site";
 
 export function WhatsAppFloat() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  if (pathname === "/contato") return null;
   return (
     <a
       href={WA.home}
