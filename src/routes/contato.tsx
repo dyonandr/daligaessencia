@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { MessageCircle } from "lucide-react";
 import { WA, SERVICES } from "@/lib/site";
 import { HERO_SALAO } from "@/lib/media";
 import { PageHero, Section, CtaBand, RelatedLinks } from "@/components/site/blocks";
