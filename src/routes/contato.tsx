@@ -171,7 +171,7 @@ function ContactWhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Agendar pelo WhatsApp"
-      className="group fixed bottom-5 right-5 z-50 flex items-center gap-3 rounded-full border border-gold/50 bg-ink py-3 pl-4 pr-5 shadow-lg transition-transform hover:scale-105"
+      className="group fixed bottom-24 right-5 z-50 flex items-center gap-3 rounded-full border border-gold/50 bg-ink py-3 pl-4 pr-5 shadow-lg transition-transform hover:scale-105"
     >
       <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-ink">
         <MessageCircle size={20} />
