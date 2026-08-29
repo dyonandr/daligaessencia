@@ -45,6 +45,8 @@ export const Route = createFileRoute("/soltura-de-cachos-alvorada")({
           "Realce a leveza e o movimento dos fios com soltura de cachos em Alvorada RS. Agende sua avaliação no Espaço Essência.",
       },
       { property: "og:title", content: "Soltura de Cachos em Alvorada RS | Espaço Essência" },
+      { property: "og:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
+      { name: "twitter:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
       {
         property: "og:description",
         content:

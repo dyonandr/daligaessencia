@@ -45,6 +45,8 @@ export const Route = createFileRoute("/progressiva-def-alvorada")({
           "Conheça a Progressiva DEF em Alvorada RS no Espaço Essência. Atendimento especializado, resultado elegante e agendamento fácil pelo WhatsApp.",
       },
       { property: "og:title", content: "Progressiva DEF em Alvorada RS | Espaço Essência" },
+      { property: "og:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
+      { name: "twitter:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
       {
         property: "og:description",
         content:

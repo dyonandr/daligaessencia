@@ -32,6 +32,8 @@ export const Route = createFileRoute("/contato")({
           "Fale com o Espaço Essência, salão de beleza em Alvorada RS. Agende cabelo e unhas pelo WhatsApp (51) 98562-3831. Av. Zero Hora, 814 — Jardim Algarve.",
       },
       { property: "og:title", content: "Contato | Espaço Essência — Alvorada RS" },
+      { property: "og:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
+      { name: "twitter:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
       {
         property: "og:description",
         content:

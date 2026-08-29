@@ -45,6 +45,8 @@ export const Route = createFileRoute("/")({
           "Espaço Essência em Alvorada RS: serviços de cabelo e unhas com atendimento especializado, sofisticação e cuidado. Agende pelo WhatsApp.",
       },
       { property: "og:title", content: "Espaço Essência | Salão de Beleza em Alvorada RS" },
+      { property: "og:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
+      { name: "twitter:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
       {
         property: "og:description",
         content:
