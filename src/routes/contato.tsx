@@ -49,14 +49,7 @@ export const Route = createFileRoute("/contato")({
 function Page() {
   return (
     <>
-      <PageHero
-        eyebrow="Fale com o salão"
-        title="Contato do Espaço Essência em Alvorada RS"
-        subtitle="O jeito mais rápido de agendar é pelo WhatsApp. Conte qual serviço você deseja e combinamos o melhor horário."
-        ctaHref={WA.home}
-        ctaLabel="Agendar pelo WhatsApp"
-        image={HERO_SALAO}
-      />
+      <ContactHero />
 
       <Section eyebrow="Informações de contato" title="NAP — Nome, endereço e telefone">
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
