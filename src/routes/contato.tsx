@@ -143,11 +143,27 @@ function Page() {
         </div>
       </Section>
 
+      <Section eyebrow="Nossa fachada" title="Venha nos visitar em Alvorada">
+        <figure className="overflow-hidden border border-border">
+          <img
+            src={HERO_SALAO.src}
+            alt={HERO_SALAO.alt}
+            width={1600}
+            height={900}
+            loading="eager"
+            className="h-auto w-full object-cover"
+          />
+          <figcaption className="bg-card px-5 py-4 text-sm text-muted-foreground">
+            Espaço Essência — Av. Zero Hora, 814, Jardim Algarve, Alvorada/RS
+          </figcaption>
+        </figure>
+      </Section>
+
       <Section eyebrow="Serviços" title="Escolha o serviço e agende" muted>
         <RelatedLinks items={SERVICES.map((s) => ({ ...s }))} />
       </Section>
 
-<CtaBand
+      <CtaBand
         title="Estamos à sua espera"
         text="Envie uma mensagem agora e garanta o seu horário no Espaço Essência."
         href={WA.home}
@@ -156,6 +172,39 @@ function Page() {
 
       <ContactWhatsAppFloat />
     </>
+  );
+}
+
+function ContactHero() {
+  return (
+    <section className="relative overflow-hidden border-b border-border">
+      <img
+        src={HERO_SALAO.src}
+        alt={HERO_SALAO.alt}
+        width={1600}
+        height={900}
+        loading="eager"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/50 to-background" />
+      <div className="relative mx-auto max-w-4xl px-5 py-24 text-center md:py-32">
+        <p className="eyebrow">Fale com o salão</p>
+        <h1 className="mt-5 font-display text-4xl leading-tight md:text-6xl">
+          Contato do Espaço Essência em Alvorada RS
+        </h1>
+        <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
+          O jeito mais rápido de agendar é pelo WhatsApp. Conte qual serviço você deseja e combinamos o melhor horário.
+        </p>
+        <div className="mt-9 flex flex-wrap justify-center gap-3">
+          <a href={WA.home} target="_blank" rel="noopener noreferrer" className="btn-gold">
+            Agendar pelo WhatsApp
+          </a>
+          <a href={MAPS_DIRECTIONS} target="_blank" rel="noopener noreferrer" className="btn-outline-gold">
+            Ver rotas no mapa
+          </a>
+        </div>
+      </div>
+    </section>
   );
 }
 
