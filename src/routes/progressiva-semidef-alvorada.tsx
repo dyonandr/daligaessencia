@@ -45,6 +45,8 @@ export const Route = createFileRoute("/progressiva-semidef-alvorada")({
           "Agende sua Progressiva Semidef em Alvorada RS no Espaço Essência. Conheça o procedimento, benefícios e fale direto pelo WhatsApp.",
       },
       { property: "og:title", content: "Progressiva Semidef em Alvorada RS | Espaço Essência" },
+      { property: "og:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
+      { name: "twitter:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
       {
         property: "og:description",
         content:

@@ -45,6 +45,8 @@ export const Route = createFileRoute("/manicure-unha-tradicional-alvorada")({
           "Agende sua manicure em Alvorada RS no Espaço Essência. Serviço de unha tradicional com acabamento cuidadoso e atendimento profissional.",
       },
       { property: "og:title", content: "Manicure em Alvorada RS | Unha Tradicional | Espaço Essência" },
+      { property: "og:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
+      { name: "twitter:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
       {
         property: "og:description",
         content:

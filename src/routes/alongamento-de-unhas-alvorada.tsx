@@ -45,6 +45,8 @@ export const Route = createFileRoute("/alongamento-de-unhas-alvorada")({
           "Faça seu alongamento de unhas em Alvorada RS no Espaço Essência. Atendimento profissional, resultado sofisticado e agendamento pelo WhatsApp.",
       },
       { property: "og:title", content: "Alongamento de Unhas em Alvorada RS | Espaço Essência" },
+      { property: "og:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
+      { name: "twitter:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
       {
         property: "og:description",
         content:

@@ -45,6 +45,8 @@ export const Route = createFileRoute("/cortes-de-cabelo-alvorada")({
           "Corte de cabelo em Alvorada RS com atendimento personalizado no Espaço Essência. Renove seu visual e agende pelo WhatsApp.",
       },
       { property: "og:title", content: "Corte de Cabelo em Alvorada RS | Espaço Essência" },
+      { property: "og:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
+      { name: "twitter:image", content: "https://daligaessencia.lovable.app/images/og-image.jpg" },
       {
         property: "og:description",
         content:
